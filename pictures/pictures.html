@@ -1,0 +1,12 @@
+<p>this is a <strong>pictures.html</strong> test</p>
+
+<input type="text" ng-model="pictureUrlInput"/>
+
+<button ng-click="pictureSubmit()">Submit Picture!</button>
+
+<div>
+	<ul>
+	<!-- 	<li ng-repeat="picture in pictures | orderBy : 'createdAt' : true">{{ picture.url }}</li> -->
+	<li ng-repeat="picture in pictures | orderBy: 'createdAt' : true"><p>image here:</p><img ng-src="{{picture.url}}"></li>
+	</ul>
+</div>
