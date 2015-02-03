@@ -4,9 +4,8 @@
 
 <button ng-click="pictureSubmit()">Submit Picture!</button>
 
-<div>
-	<ul>
-	<!-- 	<li ng-repeat="picture in pictures | orderBy : 'createdAt' : true">{{ picture.url }}</li> -->
-	<li ng-repeat="picture in pictures | orderBy: 'createdAt' : true"><p>image here:</p><img ng-src="{{picture.url}}"></li>
-	</ul>
+<div ng-repeat="picture in pictures | orderBy: 'createdAt' : true" class="pics">
+		<!-- 	<li ng-repeat="picture in pictures | orderBy : 'createdAt' : true">{{ picture.url }}</li> -->
+	<img ng-src="{{picture.url}}">
+	
 </div>

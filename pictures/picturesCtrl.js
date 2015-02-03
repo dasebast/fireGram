@@ -10,6 +10,7 @@ app.controller('picturesCtrl', function($scope, mainService) {
 
 	$scope.pictureSubmit = function() {
 		$scope.pictures.$add({url: $scope.pictureUrlInput, createdAt: new Date().toISOString()});
+		$scope.pictureUrlInput = '';
 		// console.log($scope.pictures);
 	};
 
